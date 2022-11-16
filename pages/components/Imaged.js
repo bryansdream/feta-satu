@@ -9,7 +9,7 @@ export default function Imaged(props) {
     animate={{ opacity: 1, rotate: 2, scale: 0.9 }}
     whileHover={{ rotate: 0, scale: 1, }}
     whileTap={{ rotate: 2, scale: 0.9 }}>
-      <img src={props.image} alt=""/>
+      <Image src={props.image} alt="" objectFit="cover" w="500px" h="500px"/>
     </motion.div>
     </Box>
   );
