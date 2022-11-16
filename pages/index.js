@@ -5,6 +5,8 @@ import Imaged2 from "./components/Imaged2";
 
 export default function Home() {
   return (
+    <Container maxW="9xl">
       <ImageCollection/>
+    </Container>
   );
 }
