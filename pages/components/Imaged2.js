@@ -10,7 +10,7 @@ export default function Imaged2(props) {
         whileHover={{ rotate: 0, scale: 1 }}
         whileTap={{ rotate: -2, scale: 0.9 }}
       >
-        <Image src={props.image} alt="Dan Abramov" />
+        <Image src={props.image} alt="Dan Abramov"  objectFit="cover" w="500px" h="500px" />
       </motion.div>
     </Box>
   );
