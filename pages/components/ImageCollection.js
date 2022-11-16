@@ -5,7 +5,7 @@ import Imaged2 from "./Imaged2"
 export default function ImageCollection() {
     return(
         <div>
-        <SimpleGrid minChildWidth="400px" columns={4} spacing="100px">
+        <SimpleGrid  columns={[2, 3, 4]}>
             <Imaged image="https://i.ibb.co/0fTdLLm/267956282-434437958327370-1551720664197714667-n.jpg"/>
             <Imaged2 image="https://i.ibb.co/GPYV0Yw/268593438-625183908931981-9209380790821994144-n.jpg" />
             <Imaged2 image="https://i.ibb.co/gJjzr80/274319740-1734674310212175-3611442684736990365-n.jpg" />
