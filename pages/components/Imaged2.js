@@ -3,14 +3,20 @@ import { motion } from "framer-motion";
 
 export default function Imaged2(props) {
   return (
+    <div className="group">
     <Box boxSize="fit-content">
       <motion.div
         initial={{ opacity: 0, rotate: -2, scale: 1 }}
         animate={{ opacity: 1, rotate: -2, scale: 0.9 }}
         whileHover={{ rotate: 0, scale: 1 }}
       >
-        <Image src={props.image} alt="Dan Abramov"  objectFit="cover" w={[200, 300, 400, 500]} h={[300, 350, 400, 600]} />
+        <p className="absolute flex z-10 opacity-0 group-hover:opacity-100 bg-black text-white bg-opacity-50 p-2 m-2">
+          {props.hover}
+        </p>
+
+        <Image src={props.image} alt="Image"  objectFit="cover" w={[150, 200, 300, 500]} h={[200, 250, 350, 550]} />
       </motion.div>
     </Box>
+    </div>
   );
 }
