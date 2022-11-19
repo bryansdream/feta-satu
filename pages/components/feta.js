@@ -6,7 +6,7 @@ export default function FetaHero() {
         <div className="flex justify-center">
             <Box mb={[10, 20, 30]}>
             <Link href="/">
-            <Text fontSize="4xl" as="b">Tell Me When It's Ready</Text>
+            <Text fontSize="4xl" as="b">Tell Me When Its Ready</Text>
             </Link>
             </Box>
         </div>
