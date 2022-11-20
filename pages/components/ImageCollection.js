@@ -4,7 +4,7 @@ import Imaged2 from "./Imaged2";
 import { animationControls, motion, useViewportScroll } from "framer-motion";
 import { useAnimation } from "framer-motion";
 import Head from "next/head";
-import { Zoom, Fade } from "react-reveal";
+import { Zoom, Fade, Slide } from "react-reveal";
 import config from 'react-reveal/globals';
 
 config({ ssrFadeout: true });
@@ -12,7 +12,7 @@ config({ ssrFadeout: true });
 
 export default function ImageCollection() {
   return (
-    <Fade bottom ssrFadeout>
+    <Slide bottom ssrFadeout>
       <SimpleGrid columns={[2, 3, 4]}>
         <Imaged
           image="https://i.ibb.co/HDv9Q5k/277317699-858686354855755-8963026574499317009-n.jpg"
@@ -47,6 +47,6 @@ export default function ImageCollection() {
           hover="Ini Hover"
         />
       </SimpleGrid>
-    </Fade>
+    </Slide>
   );
 }
