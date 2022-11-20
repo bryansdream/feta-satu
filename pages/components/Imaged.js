@@ -10,7 +10,7 @@ export default function Imaged(props) {
         animate={{ opacity: 1, rotate: 2, scale: 0.9 }}
         whileHover={{ rotate: 0, scale: 1 }}
       >
-        <p className="absolute flex z-10 opacity-0 group-hover:opacity-100 bg-black text-white bg-opacity-50 p-2 m-2">
+        <p className="absolute flex z-10 opacity-0 group-hover:opacity-100 bg-black text-lg text-white bg-opacity-50 p-2 m-2">
           {props.hover}
         </p>
 
