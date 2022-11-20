@@ -16,19 +16,16 @@ export default function Home() {
     });
     observer.observe(myRef.current);
   }, []);
-  // ScrollReveal().reveal('.photo')
   return (
-    <>
+    <div className="font-sans">
       <Head>
         <title>Feta</title>
       </Head>
       <Container maxW="9xl">
-        <div ref={myRef} className="photo">
+        <div ref={myRef}>
           <ImageCollection />
         </div>
-        <ImageCollection />
-        <ImageCollection />
       </Container>
-    </>
+    </div>
   );
 }
