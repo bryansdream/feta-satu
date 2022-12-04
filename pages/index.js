@@ -25,6 +25,9 @@ export default function Home() {
         <div ref={myRef}>
           <ImageCollection />
         </div>
+        <div ref={myRef}>
+          <ImageCollection />
+        </div>
       </Container>
     </div>
   );
